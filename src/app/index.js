@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./styles.css";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import AboutInfo from "../components/AboutInfo";
@@ -14,7 +14,7 @@ import Contact from "../components/Contact";
 
 function App() {
   return (
-    <div className="app">
+    <>
       <Header />
       <main>
         <Intro />
@@ -22,7 +22,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
