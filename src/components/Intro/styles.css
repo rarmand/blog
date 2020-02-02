@@ -1,0 +1,18 @@
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0 10%;
+}
+
+.introContainer__title {
+    font-size: 20px;
+    font-family: "Audiowide", cursive;
+}
+
+.introContainer__text {
+    font-size: 16px;
+    text-align: center;
+}
