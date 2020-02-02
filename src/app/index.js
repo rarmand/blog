@@ -5,6 +5,7 @@ import Intro from "../components/Intro";
 import AboutInfo from "../components/AboutInfo";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import AboutContainer from "../components/AboutContainer";
 // BEM
 // SASS albo LESS
 // algorithms in JS, animations
@@ -18,7 +19,7 @@ function App() {
       <Header />
       <main>
         <Intro />
-        <AboutInfo />
+        <AboutContainer />
         <Contact />
       </main>
       <Footer />
