@@ -1,4 +1,4 @@
-.introContainer {
+.titleTextContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,12 +7,12 @@
     margin: 0 10%;
 }
 
-.introContainer__title {
+.titleTextContainer__title {
     font-size: 20px;
     font-family: "Audiowide", cursive;
 }
 
-.introContainer__text {
+.titleTextContainer__text {
     font-size: 16px;
     text-align: center;
 }

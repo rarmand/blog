@@ -12,11 +12,11 @@ function Header(props) {
           <a className="header__menu--a" href="#about">
             About me
           </a>
-          <a className="header__menu--a" href="#blog">
-            Blog
-          </a>
           <a className="header__menu--a" href="#contact">
             Contact
+          </a>
+          <a className="header__menu--a" href="#blog">
+            Blog
           </a>
         </nav>
       </div>

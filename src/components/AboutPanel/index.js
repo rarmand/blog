@@ -5,7 +5,9 @@ function AboutPanel(props) {
   return (
     <div className="aboutPanel">
       <p className="aboutPanel__name">{props.name}</p>
-      <p className="aboutPanel__career">{props.career}</p>
+      <span className="aboutPanel__career">
+        ... or maybe just Software Developer
+      </span>
     </div>
   );
 }
