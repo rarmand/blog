@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Cat } from "../../assets/cat.svg";
+import { ReactComponent as Cat } from "./assets/cat.svg";
 import "./styles.css";
 
 function Header(props) {
