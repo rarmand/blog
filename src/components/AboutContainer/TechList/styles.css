@@ -1,0 +1,35 @@
+.techListContainer {
+    background-color: #9A9EAB;
+    padding: 0 10%;
+}
+
+ul.techListContainer__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.techListContainer__list--element {
+    list-style: none;
+    width: 100%;
+}
+
+.techListContainer__list--div {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.techListContainer__list--img {
+    height: 60px;
+}
+
+.techListContainer__list--title {
+    font-size: 16px;
+    font-family: "Audiowide", cursive;
+    color: white;
+}

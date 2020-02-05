@@ -1,6 +1,6 @@
 import React from "react";
-import TechList from "../TechList";
-import AboutPanel from "../AboutPanel";
+import TechList from "./TechList";
+import AboutPanel from "./AboutPanel";
 import TitleTextContainer from "../TitleTextContainer";
 
 // tekst do wymiany w razie użycia innego języka
@@ -17,17 +17,42 @@ function AboutContainer(props) {
   ];
 
   const technologiesObj = {
-    javascript: "JavaScript",
-    reactjs: "ReactJS",
-    flutter: "Flutter",
-    dart: "Dart",
-    htmlcss: "HTML & CSS",
-    python: "Python"
+    javascript: {
+      name: "JavaScript",
+      icon: "javascript_icon.png"
+    },
+    reactjs: {
+      name: "ReactJS",
+      icon: "react_icon.png"
+    },
+    flutter: {
+      name: "Flutter",
+      icon: "flutter_icon.png"
+    },
+    dart: {
+      name: "Dart",
+      icon: "dart_icon.png"
+    },
+    html: {
+      name: "HTML5",
+      icon: "html_icon.png"
+    },
+    css: {
+      name: "CSS3",
+      icon: "css_icon.png"
+    },
+    python: {
+      name: "Python",
+      icon: "python_icon.png"
+    }
   };
+
+  const name = "Aleksandra Holik";
+  const careerTitle = "Frontend Developer";
 
   return (
     <div>
-      <AboutPanel name="Aleksandra Holik" career="Frontend Developer" />
+      <AboutPanel name={name} career={careerTitle} />
       <TitleTextContainer title={aboutTitle} lines={aboutText} />
       <TechList technologies={technologiesObj} />
     </div>
