@@ -17,14 +17,6 @@ function AboutContainer(props) {
   ];
 
   const technologiesObj = {
-    javascript: {
-      name: "JavaScript",
-      icon: "javascript_icon.png"
-    },
-    reactjs: {
-      name: "ReactJS",
-      icon: "react_icon.png"
-    },
     flutter: {
       name: "Flutter",
       icon: "flutter_icon.png"
@@ -32,6 +24,14 @@ function AboutContainer(props) {
     dart: {
       name: "Dart",
       icon: "dart_icon.png"
+    },
+    javascript: {
+      name: "JavaScript",
+      icon: "javascript_icon.png"
+    },
+    reactjs: {
+      name: "ReactJS",
+      icon: "react_icon.png"
     },
     html: {
       name: "HTML5",

@@ -1,11 +1,11 @@
 import React from "react";
+import "./styles.css";
 
 function Footer(props) {
+  const text = "Aleksandra Holik 2020";
   return (
-    <footer>
-      <p>
-        All rights reserved. &copy; Aleksandra Holik 2020 | holik.alek@gmail.com
-      </p>
+    <footer className="footer">
+      <p className="footer__p">All rights reserved. &copy; {text}</p>
     </footer>
   );
 }
