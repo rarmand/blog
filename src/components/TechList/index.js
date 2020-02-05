@@ -1,28 +1,16 @@
 import React from "react";
 
 function TechList(props) {
+  const techList = props.technologies;
+  const techView = Object.keys(techList).map((key, index) => (
+    <li key={key}>
+      <div>{techList[key]}</div>
+    </li>
+  ));
+
   return (
     <div>
-      <ul>
-        <li>
-          <div>JavaScript</div>
-        </li>
-        <li>
-          <div>ReactJS</div>
-        </li>
-        <li>
-          <div>Flutter</div>
-        </li>
-        <li>
-          <div>Dart</div>
-        </li>
-        <li>
-          <div>HTML &amp; CSS</div>
-        </li>
-        <li>
-          <div>Python</div>
-        </li>
-      </ul>
+      <ul>{techView}</ul>
     </div>
   );
 }

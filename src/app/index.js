@@ -19,6 +19,8 @@ function App() {
     "It is not only a portfolio but also my personal collection of thoughts written in articles about valuable cases. I wish you find something interesting for yourselves."
   ];
 
+  
+
   return (
     <>
       <Header />

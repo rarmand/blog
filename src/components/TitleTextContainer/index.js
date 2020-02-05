@@ -5,10 +5,17 @@ import "./styles.css";
 // zamieszczony w innym pliku
 // eng -> pl
 function TitleTextContainer(props) {
+  const lines = props.lines;
+  const viewLines = lines.map((line, index) => (
+    <span key={index} className="titleTextContainer__text">
+      {line}
+    </span>
+  ));
+
   return (
     <div className="titleTextContainer">
       <h1 className="titleTextContainer__title">{props.title}</h1>
-      {props.lines}
+      {viewLines}
     </div>
   );
 }

@@ -16,11 +16,20 @@ function AboutContainer(props) {
     "Moim gulty pleasure jest język Python, którego w niedługim czasie zacznę częściej stosować."
   ];
 
+  const technologiesObj = {
+    javascript: "JavaScript",
+    reactjs: "ReactJS",
+    flutter: "Flutter",
+    dart: "Dart",
+    htmlcss: "HTML & CSS",
+    python: "Python"
+  };
+
   return (
     <div>
       <AboutPanel name="Aleksandra Holik" career="Frontend Developer" />
       <TitleTextContainer title={aboutTitle} lines={aboutText} />
-      <TechList />
+      <TechList technologies={technologiesObj} />
     </div>
   );
 }
