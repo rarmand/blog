@@ -1,0 +1,48 @@
+@import "../../app/styles.sass"
+
+.contactContainer
+    @include main__width()
+
+    &__title
+        font-family: "Audiowide", cursive
+        font-size: 20px
+
+    &__dataContainer
+        background-color: #9a9eab
+        width: 40%
+        margin: 20px 0
+        justify-content: center
+        @include main__width(0, 20px)
+
+    form__dataContainer--form &
+            width: 85%
+
+    &__inputContainer
+        display: flex
+        flex-direction: column
+
+    &__inputContainer--label
+        margin: 10px 0
+        font-size: 15px
+
+    &__inputContainer--input
+        padding: 15px 10px
+        border: none
+        margin: 8px 0
+        box-shadow: 2px 2px 8px #5d535e
+        box-sizing: border-box
+
+    &__inputContainer--input:focus
+        background-color: cornsilk
+
+    &__dataContainer--button
+        padding: 15px 10px
+        width: 150px
+        margin-top: 20px
+        background-color: #5d535e
+        border: none
+        text-align: center
+        text-decoration: none
+        color: white
+        font-size: 15px
+        box-shadow: 2px 2px 8px #5d535e

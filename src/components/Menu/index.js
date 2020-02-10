@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./styles.sass";
 
 function Menu(props) {
   const menu = { "#about": "About me", "#contact": "Contact", "#blog": "Blog" };

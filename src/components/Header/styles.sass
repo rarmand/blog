@@ -1,0 +1,20 @@
+@import "../../app/styles.sass"
+
+.header
+    background-color: #5D535E
+    @include main__width()
+
+    &__icon
+        padding-top: 30px
+        height: 180px
+        width: 180px
+        fill: #000000
+        -webkit-filter: drop-shadow(12px 12px 6px rgba(0, 0, 0, 0.5))
+        filter: drop-shadow(12px 12px 6px rgba(0, 0, 0, 0.5))
+
+    &__title
+        text-align: center
+        color: white
+        font-size: 52px
+        font-family: 'Audiowide', cursive
+        text-shadow: 2px 2px 4px #2c2c2c, 0 0 5px #9A9EAB

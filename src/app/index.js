@@ -1,6 +1,7 @@
 import React from "react";
-import "./styles.css";
+import "./styles.sass";
 import Portfolio from "../pages/portfolio";
+import Blog from "../pages/blog";
 
 // BEM
 // SASS albo LESS

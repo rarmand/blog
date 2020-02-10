@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./styles.sass";
 
 function Contact(props) {
   const title = "Contact me";

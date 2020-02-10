@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./styles.sass";
 
 // tekst do wymiany w razie użycia innego języka
 // zamieszczony w innym pliku

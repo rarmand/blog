@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./styles.sass";
 
 function Footer(props) {
   const text = "Aleksandra Holik 2020";
