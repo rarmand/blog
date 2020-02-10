@@ -1,7 +1,7 @@
 @import "../../../app/styles.sass"
 
 .techListContainer
-    background-color: #9A9EAB
+    background-color: $bgColorBrightBlue
     padding: 0 10%
 
     &__list
@@ -20,8 +20,8 @@
     &__list--div
         justify-content: center
         min-height: 150px
-        border-left: 1px solid #9A9EAB
-        border-right: 1px solid #9A9EAB
+        border-left: 1px solid $bgColorBrightBlue
+        border-right: 1px solid $bgColorBrightBlue
         @include main__width(0,0)
 
     &__list--img
@@ -29,7 +29,7 @@
         padding-top: 20px
 
     &__list--title
-        font-size: 14px
-        font-family: "Audiowide", cursive
-        text-shadow: 2px 2px 4px #2c2c2c
-        color: white
+        font-size: $fontSizeSmall
+        font-family: $fontFamilyTitle
+        text-shadow: $textShadowDark
+        color: $fontColorBright
