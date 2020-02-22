@@ -9,13 +9,9 @@
 
     &__dataContainer
         background-color: $bgColorBrightBlue
-        width: 40%
+        min-width: 40%
         margin: 20px 0
-        justify-content: center
-        @include main__width(0, 20px)
-
-    form__dataContainer--form &
-            width: 85%
+        padding: 20px 40px
 
     &__inputContainer
         display: flex
@@ -31,14 +27,16 @@
         margin: 8px 0
         box-shadow: $boxShadow
         box-sizing: border-box
+        font-size: $fontSizeSmall
 
     &__inputContainer--input:focus
         background-color: cornsilk
 
     &__dataContainer--button
+        display: block
         padding: 15px 10px
         width: 150px
-        margin-top: 20px
+        margin: 20px auto
         background-color: $bgColorDarkBlue
         border: none
         text-align: center
