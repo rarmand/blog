@@ -1,19 +1,36 @@
 @import "../../app/styles.sass"
 
 .header
-    background-color: $bgColorDarkBlue
-    @include main__width()
+    background-color: $colorPurple
+    display: flex
+    padding: 20px 10%
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
 
-    &__icon
-        padding-top: 30px
-        height: 180px
-        width: 180px
-        fill: #000000
-        -webkit-filter: drop-shadow(12px 12px 6px rgba(0, 0, 0, 0.5))
-        filter: drop-shadow(12px 12px 6px rgba(0, 0, 0, 0.5))
+    // &__icon
+    //     padding-top: 30px
+    //     height: 180px
+    //     width: 180px
+    //     fill: #000000
+    //     -webkit-filter: drop-shadow(12px 12px 6px rgba(0, 0, 0, 0.5))
+    //     filter: drop-shadow(12px 12px 6px rgba(0, 0, 0, 0.5))
+
+    &__component
+        display: flex
+        flex-direction: column
+        align-items: flex-start
 
     &__title
         text-align: center
         color: $fontColorBright
-        font-size: 52px
+        font-size: 36px
+        font-family: $fontFamilyText
         text-shadow: $textShadowDark, 0 0 5px $bgColorBrightBlue
+
+    &__p
+        position: relative
+        left: 40px
+        color: white
+        text-transform: uppercase
+        font-size: $fontSizeSmall - 2px

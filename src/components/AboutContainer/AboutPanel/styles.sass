@@ -1,14 +1,17 @@
 @import "../../../app/styles.sass"
 
 .aboutPanel
-  background-color: $bgColorGreen
-  font-family: $fontFamilyTitle
-  @include main__width()
+  background-color: $colorBrightGreen
+  display: flex
+  padding: 20px 0
 
   &__name
     font-size: 32px
     text-shadow: 0px 0px 3px $colorBlack
 
   &__career
-    font-size: 22px
-    text-shadow: 0px 0px $colorBlack
+    box-sizing: border-box
+    width: 50%
+    font-size: 28px
+    text-transform: uppercase
+    text-shadow: 0px 1px 5px $colorBlack

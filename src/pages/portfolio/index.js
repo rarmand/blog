@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Contact from "../../components/Contact";
 import AboutContainer from "../../components/AboutContainer";
-import TitleTextContainer from "../../components/TitleTextContainer";
+import WelcomeContainer from "../../components/WelcomeContainer";
 
 function Portfolio() {
   const introTitle = "Hello guys!";
@@ -17,7 +17,7 @@ function Portfolio() {
     <>
       <Header />
       <main>
-        <TitleTextContainer title={introTitle} lines={introText} />
+        <WelcomeContainer />
         <AboutContainer />
         <Contact />
       </main>
