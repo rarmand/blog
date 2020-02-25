@@ -51,11 +51,11 @@ function AboutContainer(props) {
   const careerTitle = "Software Developer";
 
   return (
-    <>
-      <AboutPanel name={name} career={careerTitle} />
-      <TitleTextContainer title={aboutTitle} lines={aboutText} />
-      <TechList technologies={technologiesObj} />
-    </>
+    <AboutPanel
+      name={name}
+      career={careerTitle}
+      technologies={technologiesObj}
+    />
   );
 }
 

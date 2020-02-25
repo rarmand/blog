@@ -1,17 +1,57 @@
 @import "../../../app/styles.sass"
 
 .aboutPanel
-  background-color: $colorBrightGreen
   display: flex
-  padding: 20px 0
-
-  &__name
-    font-size: 32px
-    text-shadow: 0px 0px 3px $colorBlack
+  flex-direction: column
 
   &__career
     box-sizing: border-box
-    width: 50%
-    font-size: 28px
+    background-color: $colorBrightGreen
+    width: 90%
+    height: 160px
+    display: flex
+    align-items: center
+    padding-left: 10%
     text-transform: uppercase
-    text-shadow: 0px 1px 5px $colorBlack
+    margin: 0
+
+    &--text
+      font-size: 28px
+      padding-left: 40px
+
+  &__techList
+    box-sizing: border-box
+    background-color: $colorDarkGreen
+    width: 90%
+    position: relative
+    z-index: -1
+    margin: -40px auto 0 10%
+    padding: 40px 10% 0 0
+
+    &--list
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+
+    &--element
+      list-style: none
+
+    &--div
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      align-items: center
+      padding: 10px 15px
+
+    &--img
+      height: 50px
+
+    &--title
+      margin: 10px 0 0 0
+      color: white
+
+  &__text
+    padding: 10px 0
+
+    &--p
+      padding: 10px 10%
