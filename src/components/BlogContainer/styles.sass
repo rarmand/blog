@@ -1,0 +1,34 @@
+@import "../../app/styles.sass"
+
+$bgHeight: 200px
+$bgWidth: 80%
+
+.blogContainer
+    position: relative
+    width: $bgWidth
+    height: $bgHeight
+
+    &__p
+        color: white
+        z-index: 1
+        text-transform: uppercase
+        font-size: 28px
+        margin: auto 40px auto auto
+        padding-top: 40px
+
+    &__bg1
+        background-color: $colorBrightGreen
+        opacity: 0.75
+        position: absolute
+        height: $bgHeight
+        width: $bgWidth + 5%
+        right: 10%
+
+    &__bg2
+        background-color: $colorPurple
+        opacity: 0.75
+        position: absolute
+        height: $bgHeight
+        width: $bgWidth + 5%
+        bottom: -10px
+        left: 10%

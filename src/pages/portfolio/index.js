@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import Contact from "../../components/Contact";
 import AboutContainer from "../../components/AboutContainer";
 import WelcomeContainer from "../../components/WelcomeContainer";
+import BlogContainer from "../../components/BlogContainer";
 
 function Portfolio() {
   const introTitle = "Hello guys!";
@@ -19,6 +20,7 @@ function Portfolio() {
       <main>
         <WelcomeContainer />
         <AboutContainer />
+        <BlogContainer />
         <Contact />
       </main>
       <Footer />
