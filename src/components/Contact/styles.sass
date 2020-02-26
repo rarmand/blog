@@ -1,45 +1,70 @@
 @import "../../app/styles.sass"
 
 .contactContainer
-    @include main__width()
+    margin-bottom: 40px
 
     &__title
-        font-size: 20px
+        background-color: $colorPurple
+        height: 140px
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0 10%
+
+        &--p
+            font-size: 28px
+            color: white
+            text-transform: uppercase
 
     &__dataContainer
-        background-color: $bgColorBrightBlue
-        min-width: 40%
-        margin: 20px 0
-        padding: 20px 40px
+        margin: 0 10%
+        position: relative
+
+        &--bg
+            background-color: rgba(85, 34, 68, 0.2)
+            position: absolute
+            width: 90%
+            height: 650px
+            right: -5%
+            z-index: -1
+
+        &--button
+            display: block
+            padding: 15px 10px
+            width: 150px
+            margin: 20px auto
+            background-color: $colorPurple
+            border: none
+            text-align: center
+            text-decoration: none
+            color: $fontColorBright
+            font-family: $fontFamilyText
+            font-size: $fontSizeSmall
+            box-shadow: $boxShadow
+
+        &--form
+            padding-top: 40px
 
     &__inputContainer
         display: flex
         flex-direction: column
+        align-items: center
+        padding: 10px 0
 
-    &__inputContainer--label
-        margin: 10px 0
+        &--input
+            box-sizing: border-box
+            width: 400px
+            padding: 15px 10px
+            border: none
+            margin: 8px 0
+            border: rgba(85, 34, 68, 0.5) solid
+            font-size: $fontSizeSmall
+            font-family: $fontFamilyText
+
+            &:focus
+                background-color: cornsilk
+
+    &__inputContainer:last-of-type textarea
+        height: 250px
+        font-family: $fontFamilyText
         font-size: $fontSizeSmall
-
-    &__inputContainer--input
-        padding: 15px 10px
-        border: none
-        margin: 8px 0
-        box-shadow: $boxShadow
-        box-sizing: border-box
-        font-size: $fontSizeSmall
-
-    &__inputContainer--input:focus
-        background-color: cornsilk
-
-    &__dataContainer--button
-        display: block
-        padding: 15px 10px
-        width: 150px
-        margin: 20px auto
-        background-color: $bgColorDarkBlue
-        border: none
-        text-align: center
-        text-decoration: none
-        color: $fontColorBright
-        font-size: $fontSizeSmall
-        box-shadow: $boxShadow

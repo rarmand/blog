@@ -8,11 +8,21 @@ function BlogContainer(props) {
     "Eksperyment rozpoczęty... Do dzieła!"
   ];
 
+  const textView = texts.map((text, index) => (
+    <p className="blogContainer__text--p" key={index}>
+      {text}
+    </p>
+  ));
+
   return (
     <div className="blogContainer">
-      <p className="blogContainer__p">Blog sfera</p>
-      <div className="blogContainer__bg1"></div>
-      <div className="blogContainer__bg2"></div>
+      <div className="blogContainer__title">
+        <div className="blogContainer__title--bg1"></div>
+        <div className="blogContainer__title--bg2">
+          <p className="blogContainer__title--p">{title}</p>
+        </div>
+      </div>
+      <div className="blogContainer__text">{textView}</div>
     </div>
   );
 }

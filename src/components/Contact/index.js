@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.sass";
 
 function Contact(props) {
-  const title = "Contact me";
+  const title = "Contact";
   const buttonInfo = "Send";
   const dataObj = {
     name: "Name",
@@ -11,24 +11,37 @@ function Contact(props) {
     message: "Text message"
   };
 
-  const dataView = Object.keys(dataObj).map(key => (
-    <div className="contactContainer__inputContainer">
-      <label for={key} className="contactContainer__inputContainer--label">
-        {dataObj[key]}:
-      </label>
-      <input
-        type="input"
-        id={key}
-        name={key}
-        className="contactContainer__inputContainer--input"
-      ></input>
-    </div>
-  ));
+  const dataView = Object.keys(dataObj).map(key =>
+    key !== "message" ? (
+      <div className="contactContainer__inputContainer">
+        <input
+          type="input"
+          id={key}
+          name={key}
+          className="contactContainer__inputContainer--input"
+          placeholder={dataObj[key]}
+        ></input>
+      </div>
+    ) : (
+      <div className="contactContainer__inputContainer">
+        <textarea
+          type="input"
+          id={key}
+          name={key}
+          className="contactContainer__inputContainer--input"
+          placeholder={dataObj[key]}
+        ></textarea>
+      </div>
+    )
+  );
 
   return (
     <div className="contactContainer">
-      <p className="contactContainer__title">{title}</p>
+      <div className="contactContainer__title">
+        <p className="contactContainer__title--p">{title}</p>
+      </div>
       <div className="contactContainer__dataContainer">
+        <div className="contactContainer__dataContainer--bg"></div>
         <form className="contactContainer__dataContainer--form">
           {dataView}
           <button
