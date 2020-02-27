@@ -4,7 +4,7 @@
     margin-bottom: 40px
 
     &__title
-        background-color: $colorPurple
+        background-color: $colorOrange
         height: 140px
         display: flex
         align-items: center
@@ -21,7 +21,7 @@
         position: relative
 
         &--bg
-            background-color: rgba(85, 34, 68, 0.2)
+            background-color: $colorBrightOrange // rgba(85, 34, 68, 0.2)
             position: absolute
             width: 90%
             height: 650px
@@ -33,7 +33,7 @@
             padding: 15px 10px
             width: 150px
             margin: 20px auto
-            background-color: $colorPurple
+            background-color: $colorDarkLimon
             border: none
             text-align: center
             text-decoration: none
@@ -57,12 +57,12 @@
             padding: 15px 10px
             border: none
             margin: 8px 0
-            border: rgba(85, 34, 68, 0.5) solid
+            border: $colorDarkLimon solid
             font-size: $fontSizeSmall
             font-family: $fontFamilyText
 
             &:focus
-                background-color: cornsilk
+                border: $colorLimon solid
 
     &__inputContainer:last-of-type textarea
         height: 250px

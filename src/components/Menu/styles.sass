@@ -1,22 +1,21 @@
 @import "../../app/styles.sass"
 
-.header__menu--nav
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: center
-    text-shadow: $textShadowDark
-    background-color: $colorPurple
+.header__menu
 
-.header__menu--a
-    min-width: 100px
-    padding: 35px 0
-    text-align: center
-    text-decoration: none
-    color: $fontColorBright
-    font-size: 18px
-    font-weight: bold
+    &--nav
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
 
-    &:hover
-        color: $colorBrightGreen
-        text-shadow: 0 0 5px $bgColorDarkerGray
+    &--a
+        padding: 35px 20px
+        text-align: center
+        text-decoration: none
+        color: $fontColorBright
+        font-size: 20px
+        font-weight: bold
+
+        &:hover
+            color: $colorLimon
+            text-shadow: 0 0 5px $colorBrightOrange
