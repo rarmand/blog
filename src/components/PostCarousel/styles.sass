@@ -1,0 +1,28 @@
+@import "../../app/styles.sass"
+
+.postCarousel
+    padding-top: 40px
+    width: 80%
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &__post, &__post--mainPost
+        background-color: $colorLimon
+        width: 33%
+        height: 400px
+        margin: 4px
+        padding: 20px
+
+    &__post
+        opacity: 0.6
+        overflow-y: hidden
+
+        &--title
+            margin: 0
+            font-family: $fontFamilyTitle
+            font-size: 20px
+
+        &--p
+            line-height: 1.5
+            overflow-wrap: break-word

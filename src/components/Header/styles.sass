@@ -8,14 +8,6 @@
     align-items: center
     justify-content: space-between
 
-    // &__icon
-    //     padding-top: 30px
-    //     height: 180px
-    //     width: 180px
-    //     fill: #000000
-    //     -webkit-filter: drop-shadow(12px 12px 6px rgba(0, 0, 0, 0.5))
-    //     filter: drop-shadow(12px 12px 6px rgba(0, 0, 0, 0.5))
-
     &__component
         display: flex
         flex-direction: column
@@ -24,12 +16,15 @@
     &__title
         text-align: center
         color: $fontColorBright
-        font-size: 36px
-        text-shadow: $colorDarkLimon, 0 0 5px $colorDarkLimon
+        font-size: 42px
+        font-family: $fontFamilyTitle
+        margin-bottom: 10px
 
     &__p
         position: relative
-        left: 40px
-        color: white
+        left: 0px
+        color: $colorOrange
+        background-color: $colorBrightOrange
         text-transform: uppercase
-        font-size: $fontSizeSmall - 2px
+        font-size: 16px
+        padding: 2px 10px

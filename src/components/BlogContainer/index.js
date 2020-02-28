@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.sass";
+import PostCarousel from "../PostCarousel";
 
 function BlogContainer(props) {
   const title = "Blog sfera";
@@ -23,11 +24,7 @@ function BlogContainer(props) {
         </div>
       </div>
       <div className="blogContainer__text">{textView}</div>
-      <div className="blogContainer__carousel">
-        <div className="blogContainer__post"></div>
-        <div className="blogContainer__post"></div>
-        <div className="blogContainer__post"></div>
-      </div>
+      <PostCarousel />
     </div>
   );
 }
