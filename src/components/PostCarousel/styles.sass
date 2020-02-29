@@ -1,7 +1,7 @@
 @import "../../app/styles.sass"
 
 .postCarousel
-    padding-top: 40px
+    padding-top: 20px
     width: 80%
     display: flex
     align-items: center
@@ -9,20 +9,43 @@
 
     &__post, &__post--mainPost
         background-color: $colorLimon
+        overflow-y: hidden
         width: 33%
         height: 400px
         margin: 4px
-        padding: 20px
+        padding: 40px 30px
+        display: flex
+        flex-direction: column
+        align-items: center
 
     &__post
-        opacity: 0.6
-        overflow-y: hidden
+        background-color: $colorBrightOrange
+        height: 360px
 
         &--title
             margin: 0
             font-family: $fontFamilyTitle
             font-size: 20px
 
+        &--tag
+            color: gray
+            margin: 10px 0 15px 0
+
         &--p
             line-height: 1.5
-            overflow-wrap: break-word
+            text-align: justify
+            display: block
+            display: -webkit-box
+            -webkit-line-clamp: 8
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+            padding: 0
+            margin: 0
+            font-size: 18px
+
+        &--a
+            color: $colorDarkLimon
+            right: 0
+            padding: 0
+            margin-top: 0

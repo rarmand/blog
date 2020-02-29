@@ -16,14 +16,10 @@ function WelcomeContainer() {
   ));
 
   return (
-    <div className="welcomeContainer">
+    <section className="welcomeContainer">
       <h2 className="welcomeContainer__title">{title}</h2>
-
-      {/* <h2 className="welcomeContainer__title1">{title}</h2>
-      <h2 className="welcomeContainer__title3">{title}</h2>
-      <h2 className="welcomeContainer__title4">{title}</h2> */}
       {textView}
-    </div>
+    </section>
   );
 }
 

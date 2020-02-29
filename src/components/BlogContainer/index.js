@@ -16,7 +16,7 @@ function BlogContainer(props) {
   ));
 
   return (
-    <div className="blogContainer">
+    <section className="blogContainer">
       <div className="blogContainer__title">
         <div className="blogContainer__title--bg1"></div>
         <div className="blogContainer__title--bg2">
@@ -25,7 +25,7 @@ function BlogContainer(props) {
       </div>
       <div className="blogContainer__text">{textView}</div>
       <PostCarousel />
-    </div>
+    </section>
   );
 }
 

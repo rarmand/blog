@@ -10,9 +10,9 @@ function Menu(props) {
   ));
 
   return (
-    <div className="header__menu">
+    <nav className="header__menu">
       <nav className="header__menu--nav">{viewMenu}</nav>
-    </div>
+    </nav>
   );
 }
 
