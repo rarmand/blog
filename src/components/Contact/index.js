@@ -36,7 +36,7 @@ function Contact(props) {
   );
 
   return (
-    <section className="contactContainer">
+    <section id="contact" className="contactContainer">
       <div className="contactContainer__title">
         <p className="contactContainer__title--p">{title}</p>
       </div>

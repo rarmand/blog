@@ -13,11 +13,10 @@ function Blog() {
 
   return (
     <>
-      <Menu />
       <main>
-        <div className="blogContainer">
-          <p className="blogContainer__title">So, welcome on my blog!</p>
-          <p className="blogContainer__text">
+        <div className="blog">
+          <p className="blog__title">So, welcome on my blog!</p>
+          <p className="blog__text">
             Check out the list of last posts or find interesting subject in
             search box.
           </p>

@@ -1,17 +1,21 @@
 import React from "react";
 import "./styles.sass";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Menu(props) {
-  const menu = { "#about": "About me", "#contact": "Contact", "#blog": "Blog" };
-  const viewMenu = Object.keys(menu).map((key, index) => (
-    <a className="header__menu--a" href={key} key={index}>
-      {menu[key]}
-    </a>
-  ));
-
   return (
     <nav className="header__menu">
-      <nav className="header__menu--nav">{viewMenu}</nav>
+      <nav className="header__menu--nav">
+        <Link smooth className="header__menu--a" to="/#about">
+          About me
+        </Link>
+        <Link smooth className="header__menu--a" to="/#contact">
+          Contact
+        </Link>
+        <Link className="header__menu--a" to="/blog">
+          Blog
+        </Link>
+      </nav>
     </nav>
   );
 }

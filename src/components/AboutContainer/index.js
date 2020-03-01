@@ -72,7 +72,7 @@ function AboutContainer(props) {
   const careerTitle = "Software Developer";
 
   return (
-    <section className="aboutPanel">
+    <section id="about" className="aboutPanel">
       <div className="aboutPanel__career">
         <h2 className="aboutPanel__career--text">{careerTitle}</h2>
       </div>
