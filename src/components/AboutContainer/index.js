@@ -5,7 +5,7 @@ import "./styles.sass";
 // zamieszczony w innym pliku
 // eng -> pl
 
-function AboutContainer(props) {
+const AboutContainer = () => {
   const aboutText = [
     "Profesjonalnie podchodząc do sprawy jestem programistką.",
     "Ukończyłam kierunek Informatyka Stosowana na wydziale Fizyki i Informatyki Stosowanej na Akademii Górniczo-Hutniczej w Krakowie. Mogę się pochwalić tytułami magistra inżyniera.",
@@ -76,12 +76,13 @@ function AboutContainer(props) {
       <div className="aboutPanel__career">
         <h2 className="aboutPanel__career--text">{careerTitle}</h2>
       </div>
+
       <div className="aboutPanel__techList">
         <ul className="aboutPanel__techList--list">{techView}</ul>
       </div>
       <div className="aboutPanel__text">{textView}</div>
     </section>
   );
-}
+};
 
 export default AboutContainer;

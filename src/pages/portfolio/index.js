@@ -1,6 +1,5 @@
 import React from "react";
 import "../../app/styles.sass";
-import Footer from "../../components/Footer";
 import Contact from "../../components/Contact";
 import AboutContainer from "../../components/AboutContainer";
 import WelcomeContainer from "../../components/WelcomeContainer";
@@ -14,16 +13,12 @@ function Portfolio() {
   ];
 
   return (
-    <>
-      
-      <main>
-        <WelcomeContainer />
-        <AboutContainer />
-        <BlogContainer />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <WelcomeContainer />
+      <AboutContainer />
+      <BlogContainer />
+      <Contact />
+    </main>
   );
 }
 

@@ -3,7 +3,7 @@ import "./styles.sass";
 import Menu from "../Menu";
 
 function Header(props) {
-  const headerTitle = "The kitty inner space";
+  const headerTitle = "The kitty inner space"; // Persona obscura, persona insana
   const headerSubtitle = "programowanie - nauka - języki obce - filozofia";
 
   return (

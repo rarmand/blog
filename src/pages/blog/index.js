@@ -1,8 +1,6 @@
 import React from "react";
 import "../../app/styles.sass";
 import "./styles.sass";
-import Menu from "../../components/Menu";
-import Footer from "../../components/Footer";
 import PostBox from "../../components/PostBox";
 
 function Blog() {
@@ -12,22 +10,24 @@ function Blog() {
   }
 
   return (
-    <>
-      <main>
-        <div className="blog">
-          <p className="blog__title">So, welcome on my blog!</p>
-          <p className="blog__text">
-            Check out the list of last posts or find interesting subject in
-            search box.
-          </p>
-          <p>Wyszukiwanie by się tutaj przydało, a przynajmnniej jakiś box</p>
-          <span>Rozwijalna lista tagów</span>
-          <span>Wyszukiwanie po datach</span>
-          {arr}
-        </div>
-      </main>
-      <Footer />
-    </>
+    <main>
+      <section className="blog">
+        <span className="blog__text">Lupa gdzieś po prawej</span>
+        <span className="blog__text">Rozwijalna lista tagów</span>
+        <span className="blog__text">Wyszukiwanie po datach</span>
+        <span className="blog__text">
+          Wyszukiwanie by się tutaj przydało, a przynajmnniej jakiś box
+        </span>
+
+        <h2 className="blog__title">Uszanowanko w blogosferze!</h2>
+        <p className="blog__text">
+          Sprawdź listę ostatnich postów na blogu lub znajdź coś dla siebie za
+          pomocą tagów lub wyszukiwarki.
+        </p>
+        <p className="blog__text">Życzę przyjemnego czytania! :)</p>
+        <div className="blog__posts">{arr}</div>
+      </section>
+    </main>
   );
 }
 
