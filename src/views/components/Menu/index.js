@@ -15,6 +15,9 @@ function Menu(props) {
         <Link className="header__menu--a" to="/blog">
           Blog
         </Link>
+        <Link class="header__menu--a" to="/post">
+          Test Post
+        </Link>
       </nav>
     </nav>
   );

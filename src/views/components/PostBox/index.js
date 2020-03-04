@@ -17,7 +17,7 @@ function PostBox(props) {
       <h3 className="postBox__title">{post["title"]}</h3>
       <h5 className="postBox__tag">#{post["tags"][0]}</h5>
       <p className="postBox__text">{post["text"]}</p>
-      <a className="postBox__a" href="">
+      <a className="postBox__a" href="/post">
         {postButton}
       </a>
     </div>

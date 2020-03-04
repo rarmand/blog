@@ -4,6 +4,7 @@ import Blog from "../pages/blog";
 import Portfolio from "../pages/portfolio";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import PostContainer from "../components/PostContainer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // BrowserRouter - glowny komponent, gdzie cala def routingu, predefiniowana tu historia przeglądarki lub mozna w lib samemu zdefiniować historie
@@ -27,6 +28,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Portfolio} />
           <Route path="/blog" component={Blog} />
+          <Route path="/post" component={PostContainer} />
         </Switch>
         <Footer />
       </div>
