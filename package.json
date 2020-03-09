@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.4",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -21,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "nodemon src/server/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,5 +43,8 @@
   },
   "resolutions": {
     "serialize-javascript": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
